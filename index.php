@@ -31,9 +31,20 @@ $search = Usuario::search("silva");
 echo json_encode($search);
 */
 
+/*
 //Carrega um usuario usando o login e a senha
 $usuario = new Usuario();
 $usuario->login("edneiaribeiro", "programadorahermione1");
 
 echo $usuario;
+*/
+
+$aluno = new Usuario("Aluno2", "A@2");
+
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@alun0");
+
+$aluno->insert();
+
+echo $aluno;
 ?>

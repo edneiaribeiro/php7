@@ -38,7 +38,8 @@ $usuario->login("edneiaribeiro", "programadorahermione1");
 
 echo $usuario;
 */
-
+/*
+ * Criando um novo usuario
 $aluno = new Usuario("Aluno2", "A@2");
 
 //$aluno->setDeslogin("aluno");
@@ -47,4 +48,26 @@ $aluno = new Usuario("Aluno2", "A@2");
 $aluno->insert();
 
 echo $aluno;
+*/
+
+/*
+ * Alterar um usuario
+$usuario = new Usuario();
+
+$usuario->loadById(2);
+
+$usuario->update("professor", "$@#@!");
+
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(10);
+
+$usuario->delete();
+
+echo $usuario;
+
+
 ?>
